@@ -1,327 +1,416 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nhượng quyền thương hiệu trà sữa Lục Trà Thăng Hoa - Mô hình kinh doanh hiệu quả với chi phí tối ưu">
-  <title>Nhượng quyền Lục Trà Thăng Hoa</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <style>
-    :root {
-      --primary-color: #0077cc;
-      --secondary-color: #005fa3;
-      --accent-color: #008fe5;
-      --text-dark: #333;
-      --text-light: #fff;
-      --bg-light: rgba(255, 255, 255, 0.9);
-    }
-    
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--primary-color);
-      color: var(--text-light);
-      line-height: 1.6;
-    }
-    
-    header {
-      background-color: var(--bg-light);
-      padding: 2rem 1rem;
-      text-align: center;
-      border-bottom: 2px solid #a1d4f0;
-    }
-    
-    .logo-container {
-      margin-bottom: 1.5rem;
-    }
-    
-    .logo {
-      max-width: 250px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      transition: transform 0.3s;
-    }
-    
-    .logo:hover {
-      transform: scale(1.05);
-    }
-    
-    header h1 {
-      color: var(--primary-color);
-      margin: 0.5rem 0;
-      font-size: 2.2rem;
-    }
-    
-    header p {
-      color: var(--text-dark);
-      margin: 0;
-      font-size: 1.1rem;
-    }
-    
-    main {
-      padding: 1rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    .hero-image {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin: 1rem 0;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-    
-    .card {
-      background: var(--bg-light);
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      color: var(--text-dark);
-    }
-    
-    .card h2 {
-      color: var(--primary-color);
-      margin-top: 0;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid #eee;
-    }
-    
-    .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-    
-    .benefit-item {
-      display: flex;
-      align-items: flex-start;
-    }
-    
-    .benefit-icon {
-      width: 60px;
-      height: 60px;
-      margin-right: 1rem;
-      flex-shrink: 0;
-    }
-    
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin: 2rem 0;
-    }
-    
-    .gallery img {
-      width: 100%;
-      border-radius: 8px;
-      transition: transform 0.3s;
-    }
-    
-    .gallery img:hover {
-      transform: scale(1.03);
-    }
-    
-    .form-section {
-      background: var(--bg-light);
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      color: var(--text-dark);
-      margin-top: 2rem;
-    }
-    
-    .form-group {
-      margin-bottom: 1.5rem;
-    }
-    
-    .form-group label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: bold;
-    }
-    
-    .form-control {
-      width: 100%;
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-    
-    textarea.form-control {
-      min-height: 120px;
-      resize: vertical;
-    }
-    
-    .btn {
-      display: inline-block;
-      background-color: var(--primary-color);
-      color: var(--text-light);
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      text-decoration: none;
-    }
-    
-    .btn:hover {
-      background-color: var(--secondary-color);
-    }
-    
-    .btn-zalo {
-      background-color: #008fe5;
-      margin-top: 1rem;
-    }
-    
-    .btn-zalo:hover {
-      background-color: #0077cc;
-    }
-    
-    footer {
-      background-color: rgba(0, 0, 0, 0.2);
-      padding: 2rem;
-      text-align: center;
-      margin-top: 2rem;
-    }
-    
-    @media (max-width: 768px) {
-      header, section {
-        padding: 1rem;
-      }
-      
-      .benefits-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhượng Quyền Lục Trà Thăng Hoa - Quy Trình 8 Bước Chuẩn</title>
+    <style>
+        :root {
+            --primary-blue: #1E90FF;
+            --secondary-blue: #0077CC;
+            --white: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --dark-text: #333333;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(rgba(30, 144, 255, 0.8), rgba(30, 144, 255, 0.9)), url('https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3klMjB0ZWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60');
+            background-size: cover;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .cta-button {
+            background-color: var(--white);
+            color: var(--primary-blue);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background-color: var(--secondary-blue);
+            color: var(--white);
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section-title {
+            color: var(--primary-blue);
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .benefit-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 25px;
+            width: 250px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+        .benefit-icon {
+            font-size: 40px;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+        .cost-table {
+            margin: 0 auto;
+            width: 80%;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .cost-table th, .cost-table td {
+            border: 1px solid #DDD;
+            padding: 12px;
+        }
+        .cost-table th {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+        /* Phần quy trình 8 bước */
+        .process-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+            counter-reset: step-counter;
+        }
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            padding-left: 60px;
+        }
+        .process-step:before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .process-content {
+            background-color: var(--white);
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            flex-grow: 1;
+            border-left: 3px solid var(--primary-blue);
+        }
+        .process-content h3 {
+            margin-top: 0;
+            color: var(--primary-blue);
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #DDD;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 40px 0;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .requirement-list {
+            text-align: left;
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .requirement-item {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .requirement-item:before {
+            content: "•";
+            color: var(--primary-blue);
+            font-size: 24px;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        footer {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        #thankYouMessage {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .google-form-embed {
+            width: 100%;
+            height: 1200px;
+            border: none;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="images/logo.jpg" alt="Logo Lục Trà Thăng Hoa" class="logo">
+    <!-- Header Section -->
+    <div class="header">
+        <h1>LỤC TRÀ THĂNG HOA</h1>
+        <p>Nhượng quyền thương hiệu trà hàng đầu Việt Nam</p>
+        <a href="#process" class="cta-button">NHẬN TƯ VẤN NGAY</a>
     </div>
-    <h1>Nhượng quyền Lục Trà Thăng Hoa</h1>
-    <p>Đồng hành khởi nghiệp cùng thương hiệu trà sữa nổi bật với mô hình dễ vận hành, chi phí tối ưu</p>
-  </header>
 
-  <main>
-    <img src="images/store-front.jpg" alt="Cửa hàng Lục Trà Thăng Hoa" class="hero-image">
+    <!-- Benefits Section -->
+    <div class="section">
+        <h2 class="section-title">ƯU THẾ KHI NHƯỢNG QUYỀN</h2>
+        <div class="benefits">
+            <div class="benefit-card">
+                <div class="benefit-icon">💰</div>
+                <h3>Lợi nhuận hấp dẫn</h3>
+                <p>Mô hình đã kiểm chứng với tỷ suất lợi nhuận 20-30%</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🔄</div>
+                <h3>Quy trình rõ ràng</h3>
+                <p>Hệ thống quản lý chuẩn hóa từ A-Z</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🌿</div>
+                <h3>Nguyên liệu độc quyền</h3>
+                <p>Nguồn cung ổn định, chất lượng cao</p>
+            </div>
+        </div>
+    </div>
 
-    <section class="card">
-      <h2>Tại sao chọn nhượng quyền Lục Trà Thăng Hoa?</h2>
-      <div class="benefits-grid">
-        <div class="benefit-item">
-          <img src="images/profit-icon.png" alt="Lợi nhuận" class="benefit-icon">
-          <div>
-            <h3>Lợi nhuận hấp dẫn</h3>
-            <p>Doanh thu ổn định, thu hồi vốn chỉ từ 12-18 tháng</p>
-          </div>
+    <!-- Tư Cách Nhượng Quyền -->
+    <div class="section" style="background-color: var(--light-gray);">
+        <h2 class="section-title">TƯ CÁCH NHƯỢNG QUYỀN</h2>
+        <div class="requirement-list">
+            <div class="requirement-item">Thấu hiểu và đồng hành cùng văn hóa thương hiệu</div>
+            <div class="requirement-item">Có tinh thần đồng đội, sẵn sàng học hỏi</div>
+            <div class="requirement-item">Hiểu rõ tư duy kinh doanh F&B, có khát vọng thành công</div>
+            <div class="requirement-item">Cam kết hợp tác dài hạn theo hợp đồng</div>
         </div>
-        
-        <div class="benefit-item">
-          <img src="images/training-icon.png" alt="Đào tạo" class="benefit-icon">
-          <div>
-            <h3>Đào tạo toàn diện</h3>
-            <p>Hỗ trợ đào tạo từ A-Z: pha chế, quản lý, marketing</p>
-          </div>
-        </div>
-        
-        <div class="benefit-item">
-          <img src="images/material-icon.png" alt="Nguyên liệu" class="benefit-icon">
-          <div>
-            <h3>Nguyên liệu độc quyền</h3>
-            <p>Nguồn nguyên liệu ổn định, chất lượng cao</p>
-          </div>
-        </div>
-        
-        <div class="benefit-item">
-          <img src="images/brand-icon.png" alt="Thương hiệu" class="benefit-icon">
-          <div>
-            <h3>Thương hiệu uy tín</h3>
-            <p>Được khách hàng trẻ yêu thích và tin dùng</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
-    <section class="card">
-      <h2>Chi phí đầu tư ban đầu</h2>
-      <img src="images/investment-chart.png" alt="Biểu đồ chi phí đầu tư" style="width:100%; max-width:600px; margin:1rem auto; display:block;">
-      <ul>
-        <li>Phí nhượng quyền: <strong>100.000.000đ</strong></li>
-        <li>Trang thiết bị: <strong>90.000.000đ</strong></li>
-        <li>Đặt cọc hợp đồng: <strong>20.000.000đ</strong></li>
-        <li>Quảng bá thương hiệu: <strong>30.000.000đ</strong></li>
-        <li>Chi phí mặt bằng và phát sinh: <strong>160.000.000đ</strong></li>
-        <li style="font-size:1.2rem; margin-top:1rem;">Tổng đầu tư dự kiến: <strong>400.000.000đ</strong></li>
-      </ul>
-    </section>
+    <!-- Gallery Section -->
+    <div class="section">
+        <h2 class="section-title">HÌNH ẢNH CỬA HÀNG</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRlYSUyMHNob3B8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Cửa hàng Lục Trà Thăng Hoa">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJ1YmJsZSUyMHRlYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Sản phẩm bán chạy">
+            <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNvZmZlZSUyMHNob3B8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Không gian quán">
+        </div>
+    </div>
 
-    <section class="card">
-      <h2>Hình ảnh cửa hàng và sản phẩm</h2>
-      <div class="gallery">
-        <img src="images/store-1.jpg" alt="Không gian cửa hàng">
-        <img src="images/product-1.jpg" alt="Trà sữa đặc biệt">
-        <img src="images/store-2.jpg" alt="Quầy pha chế">
-        <img src="images/product-2.jpg" alt="Combo ưu đãi">
-      </div>
-    </section>
+    <!-- Điều Kiện Nhượng Quyền -->
+    <div class="section">
+        <h2 class="section-title">ĐIỀU KIỆN NHƯỢNG QUYỀN</h2>
+        <div class="requirement-list">
+            <div class="requirement-item">Công dân Việt Nam ≥18 tuổi, lý lịch rõ ràng</div>
+            <div class="requirement-item">Yêu thích lĩnh vực đồ uống, đặc biệt là trà sữa</div>
+            <div class="requirement-item">Tuân thủ văn hóa thương hiệu và định hướng công ty</div>
+            <div class="requirement-item">Tham gia đầy đủ khóa đào tạo 5-7 ngày</div>
+            <div class="requirement-item">Đủ năng lực tài chính (tối thiểu 500 triệu VNĐ)</div>
+            <div class="requirement-item">Không kinh doanh sản phẩm cạnh tranh tương tự</div>
+        </div>
+    </div>
 
-    <section class="form-section">
-      <h2>Đăng ký tư vấn nhượng quyền</h2>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <div class="form-group">
-          <label for="name">Họ và tên:</label>
-          <input type="text" id="name" name="name" class="form-control" placeholder="Nhập họ và tên" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="phone">Số điện thoại:</label>
-          <input type="tel" id="phone" name="phone" class="form-control" placeholder="Nhập số điện thoại" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" class="form-control" placeholder="Nhập email">
-        </div>
-        
-        <div class="form-group">
-          <label for="location">Khu vực quan tâm:</label>
-          <input type="text" id="location" name="location" class="form-control" placeholder="VD: Hà Nội, TP.HCM, Đà Nẵng...">
-        </div>
-        
-        <div class="form-group">
-          <label for="message">Nhu cầu của bạn:</label>
-          <textarea id="message" name="message" class="form-control" placeholder="Mô tả nhu cầu đầu tư của bạn..."></textarea>
-        </div>
-        
-        <button type="submit" class="btn">Gửi đăng ký</button>
-      </form>
-      
-      <p style="margin-top:1.5rem; text-align:center;">Hoặc kết nối trực tiếp với chúng tôi qua:</p>
-      <a href="https://zalo.me/0912345678" class="btn btn-zalo">
-        <img src="images/zalo-icon.png" alt="Zalo" style="height:20px; vertical-align:middle; margin-right:8px;">
-        Zalo: 0912 345 678
-      </a>
-    </section>
-  </main>
+    <!-- Cost Section -->
+    <div class="section" style="background-color: var(--light-gray);">
+        <h2 class="section-title">CHI PHÍ ĐẦU TƯ</h2>
+        <table class="cost-table">
+            <tr>
+                <th>Hạng mục</th>
+                <th>Chi phí (VNĐ)</th>
+            </tr>
+            <tr>
+                <td>Phí nhượng quyền</td>
+                <td>110.000.000</td>
+            </tr>
+            <tr>
+                <td>Thiết bị, dụng cụ</td>
+                <td>100.000.000</td>
+            </tr>
+            <tr>
+                <td>Mặt bằng & thiết kế</td>
+                <td>200.000.000</td>
+            </tr>
+            <tr>
+                <td>Marketing</td>
+                <td>50.000.000</td>
+            </tr>
+            <tr>
+                <td><strong>Tổng cộng</strong></td>
+                <td><strong>500.000.000</strong></td>
+            </tr>
+        </table>
+    </div>
 
-  <footer>
-    <p>© 2023 Lục Trà Thăng Hoa. All rights reserved.</p>
-    <p>Hotline: 1900 1234 - Email: info@luctrathanghoa.com</p>
-    <p>Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</p>
-  </footer>
+    <!-- Process Section - Phiên bản 8 bước theo hình -->
+    <div id="process" class="section">
+        <h2 class="section-title">QUY TRÌNH NHƯỢNG QUYỀN 8 BƯỚC</h2>
+        <div class="process-steps">
+            <!-- Bước 1 -->
+            <div class="process-step">
+                <div class="process-content">
+                    <h3>Tiếp nhận nhượng quyền</h3>
+                    <p>Đăng ký thông tin qua form hoặc hotline để nhận bộ tài liệu chi tiết</p>
+                </div>
+            </div>
+            
+            <!-- Bước 2 -->
+            <div class="process-step">
+                <div class="process-content">
+                    <h3>Đánh giá mức độ phù hợp</h3>
+                    <p>Phỏng vấn trực tiếp và đánh giá tiềm năng địa điểm kinh doanh</p>
+                </div>
+            </div>
+            
+            <!-- Bước 3 -->
+            <div class="process-step">
+                <div class="process-content">
+                    <h3>Ký hợp đồng đặt cọc</h3>
+                    <p>Ký HĐ và đặt cọc 20% phí nhượng quyền để giữ chỗ</p>
+                </div>
+            </div>
+            
+            <!-- Bước 4 -->
+            <div class="process-step">
+                <div class="process-content">
+                    <h3>Chọn địa điểm và trang trí cửa hàng</h3>
+                    <p>Đội ngũ thiết kế hỗ trợ 3D không gian và giám sát thi công</p>
+                </div>
+            </div>
+            
+            <!-- Bước 5 -->
+            <div class="process-step">
+                <div class="process-content">
+                    <h3>Đào tạo và chuẩn bị nhân viên</h3>
+                    <p>Đào tạo 5-7 ngày về pha chế, vận hành và quản lý cửa hàng</p>
+                </div>
+            </div>
+            
+            <!-- Bước 6 -->
+            <div class="process-step">
+                <div class="process-content">
+                    <h3>Ký hợp đồng chính thức</h3>
+                    <p>Hoàn tất thủ tục và thanh toán phí nhượng quyền còn lại</p>
+                </div>
+            </div>
+            
+            <!-- Bước 7 -->
+            <div class="process-step">
+                <div class="process-content">
+                    <h3>Bán thử</h3>
+                    <p>Chạy thử hệ thống 3-5 ngày với ưu đãi đặc biệt cho khách hàng</p>
+                </div>
+            </div>
+            
+            <!-- Bước 8 -->
+            <div class="process-step">
+                <div class="process-content">
+                    <h3>Khai trương</h3>
+                    <p>Tổ chức sự kiện khai trương với hỗ trợ marketing từ HQ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Form Embed -->
+    <div id="contact" class="section" style="background-color: var(--light-gray);">
+        <h2 class="section-title">ĐĂNG KÝ TƯ VẤN</h2>
+        <div class="contact-form">
+            <iframe class="google-form-embed" src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Hotline: 1900.XXX.XXX</p>
+        <p>Email: franchise@luctrathanghoa.com</p>
+        <p>© 2024 Lục Trà Thăng Hoa. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Hiệu ứng khi cuộn trang
+        window.addEventListener('scroll', function() {
+            const cards = document.querySelectorAll('.benefit-card');
+            cards.forEach((card, index) => {
+                const cardPosition = card.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if(cardPosition < screenPosition) {
+                    card.style.transitionDelay = `${index * 0.1}s`;
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Khởi tạo trạng thái ban đầu cho hiệu ứng
+        document.querySelectorAll('.benefit-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+        });
+    </script>
 </body>
 </html>
